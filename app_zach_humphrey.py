@@ -76,8 +76,11 @@ if page == "HW Summary":
         # - What libraries did you use and why?
         # - What challenges did you face?
         # - How did you test your queries?
-        st.write("""
-       
+        st.write("""I connected to the MySQL database using the mysql-connector-python library with read-only credentials 
+        for security. The application uses Streamlit for the frontend, Pandas for data manipulation, and Folium 
+        for interactive mapping. I structured the code into clear sections with comprehensive error handling to 
+        ensure smooth user experience. Each query was tested incrementally, first with simple filters and then 
+        with combined conditions to verify correct SQL syntax and results.       
         """)
 
     with col2:
@@ -88,8 +91,11 @@ if page == "HW Summary":
         # 1. Layout (columns, containers, etc.)
         # 2. Map tiles (not default OpenStreetMap)
         # 3. Data display (colors, formatting, etc.)
-        st.write("""
-       
+        st.write("""I implemented several customizations: (1) Used a responsive column layout throughout the app with 
+        info boxes for better visual hierarchy, (2) Applied CartoDB Positron tiles for the map instead of 
+        default OpenStreetMap for a cleaner, professional look, (3) Styled the data tables with custom 
+        column configurations and formatting, including number formatting for votes and hiding the index 
+        for cleaner presentation. Additionally, I added helpful tooltips and captions to guide users.       
         """)
 
     # Technologies section (You can keep this or modify it)
